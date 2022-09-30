@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+html, body{
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+}
+
+.fav{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1em;
+    font-size: 25px;
+    position: static;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+div{
+    width: 40%;
+    height: 500px;
+    margin: 30px auto;
+    border: 1px solid white;
+}
+
+@media (max-width:1200px) {
+    .avangers, .DC{
+        height: 35%;
+    }
+    .fav{
+        font-style: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    header{
+        position: static;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    .avangers, .DC{
+        height: 30%;
+        width: 50%;
+    }
+}
+
+@media (max-width:425px) {
+    .fav{
+        font-style: 16px;
+    }
+
+    .avangers, .DC{
+        height: 25%;
+        width: 60%;
+    }
+    
+}
+
+@media (max-width: 760px) and (orientation: landscape) {
+    .avangers, .DC{
+        height: 30%;
+        width: 50%;
+    }
+
+    .fav{
+        font-style: 15px;
+    }
+}
+
+@media (max-width: 375px ) {
+    .fav{
+        font-size: 15px;
+    }
+    .avangers, .DC {
+        height: 20%;
+        width: 70%;
+    }
+
+}
